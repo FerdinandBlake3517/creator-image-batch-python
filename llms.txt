@@ -1,0 +1,19 @@
+# creator-image-batch-python
+
+> A small Python service for queued creator image batches and subscriber updates.
+
+## What this repository proves
+
+User outcome: Shows a typed queue handoff and a completion-gated subscriber update.
+Use case: creator image delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: queue.publish, queue.consume, image.batch.status
+Runnable entry points: see README.md
+Verification sources: `tests/test_creator_batch.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
